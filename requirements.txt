@@ -1,2 +1,2 @@
-pandas
-pytest
+pandas==0.25.3
+pytest==5.3.2

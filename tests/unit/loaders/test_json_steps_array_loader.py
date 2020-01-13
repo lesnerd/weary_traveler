@@ -1,10 +1,11 @@
 import pytest
 
+from globals import PROJECT_ROOT
 from loaders.json_steps_array_loader import JsonStepsArrayLoader
 
 
-FILE_CONTAINING_ARRAY_LOCATION = "../files/full_json.json"
-EMPTY_FILE = "../files/empty_json.json"
+FILE_CONTAINING_ARRAY_LOCATION = "{project_root}/tests/unit/files/full_json.json".format(project_root=PROJECT_ROOT)
+EMPTY_FILE = "{project_root}/tests/unit/files/empty_json.json".format(project_root=PROJECT_ROOT)
 
 class TestJsonStepsArrayLoader:
     def test_load_has_array(self):

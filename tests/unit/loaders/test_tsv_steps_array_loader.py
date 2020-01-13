@@ -1,11 +1,12 @@
 import pandas
 import pytest
 
+from globals import PROJECT_ROOT
 from loaders.tsv_steps_array_loader import TSVStepsArrayLoader
 
-FILE_CONTAINING_ARRAY_LOCATION = "../files/ok.tsv"
-FILE_NOT_CONTAINING_ARRAY_LOCATION = "../files/not_ok.tsv"
-EMPTY_FILE = "../files/empty_tsv.tsv"
+FILE_CONTAINING_ARRAY_LOCATION = "{project_root}/tests/unit/files/ok.tsv".format(project_root=PROJECT_ROOT)
+FILE_NOT_CONTAINING_ARRAY_LOCATION = "{project_root}/tests/unit/files/not_ok.tsv".format(project_root=PROJECT_ROOT)
+EMPTY_FILE = "{project_root}/tests/unit/files/empty_tsv.tsv".format(project_root=PROJECT_ROOT)
 
 class TestTSVStepsArrayLoader:
     def test_load_has_array(self):
