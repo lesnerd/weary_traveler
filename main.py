@@ -12,12 +12,9 @@ if __name__ == '__main__':
                                     FileStepsArrayLoaderResolver(),
                                     PathFinderAlgorithm)
 
-    # userInput = input("Please enter full file path to CVS, TSV or Json files: ")
-    #userInput = "/Users/lesnerd/Desktop/cartica_test_cases/Cartica test cases - Json.json"
-    #userInput = "/Users/lesnerd/Desktop/cartica_test_cases/cartica_col_tsv"
-    userInput = "/Users/lesnerd/Desktop/cartica_test_cases/cartica_col.csv"
+    user_input = input("Please enter full file path to CVS, TSV or Json files: ")
 
-    if path_finder.find(userInput):
+    if path_finder.find(user_input):
         exit(0)
     else:
         exit(1)
