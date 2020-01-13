@@ -1,4 +1,0 @@
-[
-  "test_path_finder_algorithm.py::TestPathFinderAlgorithm::test_find_with_result_true",
-  "test_path_finder_algorithm.py::TestPathFinderAlgorithm::test_find_with_result_false"
-]
