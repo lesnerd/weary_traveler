@@ -13,7 +13,9 @@ path_finder_service = PathFinderService(FileValidator,
 
 if __name__ == '__main__':
     user_input = input("Please enter full file path to CVS, TSV or Json files: ")
-
+    while not user_input:
+        print("No path was entered!")
+        user_input = input("Please enter full file path to CVS, TSV or Json files: ")
     if path_finder_service.find(user_input):
         exit(0)
     else:
